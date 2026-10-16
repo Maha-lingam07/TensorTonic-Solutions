@@ -8,6 +8,6 @@ def cosine_similarity(a: list, b: list) -> float:
     num = np.dot(a,b)
     den = np.linalg.norm(a) * np.linalg.norm(b)
 
-    if(int(den) == 0):
+    if(den == 0.0):
         return float(0)
     return float(num/den)
